@@ -1,0 +1,117 @@
+Barotrauma Client crash report (generated on 2021/12/17 上午 04:08:18)
+
+
+Barotrauma seems to have crashed. Sorry for the inconvenience! 
+
+
+25F2DA9FCBD0323CBDF4FC2DA2092C7B
+
+
+Game version 0.15.22.1 (ReleaseWindows, branch release, revision 898f64d2c0)
+Graphics mode: 1920x1080 (BorderlessWindowed)
+VSync ON
+Language: Traditional Chinese
+Selected content packages: Vanilla 0.9, 2JIEN+, Backpacks, Genes+, Toolbox Expanded, Meaningful Upgrades, 搬炮弹, 100x Stack
+Level seed: no level loaded
+Loaded submarine: None
+Selected screen: Barotrauma.SteamWorkshopScreen
+SteamManager initialized
+
+
+System info:
+    Operating system: Microsoft Windows NT 10.0.19043.0 64 bit
+    GPU name: NVIDIA GeForce GTX 1650
+    Display mode: {Width:1920 Height:1080 Format:Color AspectRatio:1.7777778}
+    GPU status: Normal
+
+
+Exception: Could not find a part of the path 'E:\Program Files (x86)\Steam\steamapps\common\Barotrauma\Mods\HHumpback streng...\PreviewImage.png'. (System.IO.DirectoryNotFoundException)
+Target site: Void CopyFile(System.String, System.String, Boolean)
+Stack trace: 
+   at System.IO.FileSystem.CopyFile(String sourceFullPath, String destFullPath, Boolean overwrite)
+   at System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   at Barotrauma.IO.File.Copy(String src, String dest, Boolean overwrite) in <DEV>\Barotrauma\BarotraumaShared\SharedSource\Utils\SafeIO.cs:line 289
+   at Barotrauma.Steam.SteamManager.CreateWorkshopItemStaging(ContentPackage contentPackage, Nullable`1& itemEditor) in <DEV>\Barotrauma\BarotraumaClient\ClientSource\Networking\SteamManager.cs:line 776
+   at Barotrauma.SteamWorkshopScreen.CreateWorkshopItem(SubmarineInfo sub) in <DEV>\Barotrauma\BarotraumaClient\ClientSource\Screens\SteamWorkshopScreen.cs:line 1091
+   at Barotrauma.SteamWorkshopScreen.<CreateUI>b__23_6(GUIComponent component, Object userdata) in <DEV>\Barotrauma\BarotraumaClient\ClientSource\Screens\SteamWorkshopScreen.cs:line 226
+   at Barotrauma.GUIListBox.Select(Int32 childIndex, Boolean force, Boolean autoScroll, Boolean takeKeyBoardFocus) in <DEV>\Barotrauma\BarotraumaClient\ClientSource\GUI\GUIListBox.cs:line 993
+   at Barotrauma.GUIListBox.UpdateChildrenRect() in <DEV>\Barotrauma\BarotraumaClient\ClientSource\GUI\GUIListBox.cs:line 712
+   at Barotrauma.GUIListBox.Update(Single deltaTime) in <DEV>\Barotrauma\BarotraumaClient\ClientSource\GUI\GUIListBox.cs:line 833
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Barotrauma.GUI.Update(Single deltaTime) in <DEV>\Barotrauma\BarotraumaClient\ClientSource\GUI\GUI.cs:line 1254
+   at Barotrauma.GameMain.Update(GameTime gameTime) in <DEV>\Barotrauma\BarotraumaClient\ClientSource\GameMain.cs:line 962
+   at Microsoft.Xna.Framework.Game.DoUpdate(GameTime gameTime) in <DEV>\Libraries\MonoGame.Framework\Src\MonoGame.Framework\Game.cs:line 656
+   at Microsoft.Xna.Framework.Game.Tick() in <DEV>\Libraries\MonoGame.Framework\Src\MonoGame.Framework\Game.cs:line 504
+   at Microsoft.Xna.Framework.SdlGamePlatform.RunLoop() in <DEV>\Libraries\MonoGame.Framework\Src\MonoGame.Framework\SDL\SDLGamePlatform.cs:line 94
+   at Microsoft.Xna.Framework.Game.Run(GameRunBehavior runBehavior) in <DEV>\Libraries\MonoGame.Framework\Src\MonoGame.Framework\Game.cs:line 398
+   at Microsoft.Xna.Framework.Game.Run() in <DEV>\Libraries\MonoGame.Framework\Src\MonoGame.Framework\Game.cs:line 368
+   at Barotrauma.Program.Main(String[] args) in <DEV>\Barotrauma\BarotraumaClient\ClientSource\Program.cs:line 59
+
+
+Last debug messages:
+[2021/12/17 上午 04:08:01] Freedom
+[2021/12/17 上午 04:07:55] Freedom
+[2021/12/17 上午 04:07:54] Task count: 0
+[2021/12/17 上午 04:07:52] Generating an outpost for the end of the level... (Location: Butterdon Linea開採設施, level type: LocationConnection)
+[2021/12/17 上午 04:07:38] Freedom
+[2021/12/17 上午 03:16:49] Freedom
+[2021/12/17 上午 03:16:46] Task count: 0
+[2021/12/17 上午 03:16:44] Generating an outpost for the start of the level... (Location: Krytogorsk之城, level type: LocationConnection)
+[2021/12/17 上午 03:16:17] Freedom
+[2021/12/17 上午 03:16:17] Failed to select a mission in location "Krytogorsk之城". Mission index out of bounds (1, available missions: 1)
+[2021/12/17 上午 02:56:39] Freedom
+[2021/12/17 上午 02:56:35] Task count: 0
+[2021/12/17 上午 02:56:31] Generating an outpost for the start of the level... (Location: Krytogorsk之城, level type: LocationConnection)
+[2021/12/17 上午 02:56:17] Freedom
+[2021/12/17 上午 02:56:17] WARNING: Could not determine reputation change for faction "小丑聖母之子" (faction was not present at the start of the round).
+[2021/12/17 上午 02:56:17] WARNING: Could not determine reputation change for faction "畫皮教派" (faction was not present at the start of the round).
+[2021/12/17 上午 02:56:17] WARNING: Could not determine reputation change for faction "木星分離主義分子" (faction was not present at the start of the round).
+[2021/12/17 上午 02:56:17] WARNING: Could not determine reputation change for faction "木衛二聯盟" (faction was not present at the start of the round).
+[2021/12/17 上午 02:28:53] Freedom
+[2021/12/17 上午 02:28:52] WARNING: Could not compress a texture because the dimensions aren't a multiple of 4 (path: Mods/2JIEN+/content/Items/Jobgear/Security/SecurityOfficer7.png, size: 650x360)
+[2021/12/17 上午 02:28:49] Task count: 0
+[2021/12/17 上午 02:28:47] Generating an outpost for the start of the level... (Location: Krytogorsk之城, level type: Outpost)
+[2021/12/17 上午 02:26:22] Lobby created!
+[2021/12/17 上午 02:24:26] (Msg) SDR RelayNetworkStatus:  avail=OK  config=OK  anyrelay=OK   (OK)
+[2021/12/17 上午 02:24:26] (Msg) Ping location: tyo1=54+5,tyo=75+7/54+5,hkg=79+7,seo=105+10/84+5,sgp=114+11/109+7,maa=136+13,lax=149+14,bom=159+15/153+13,syd=157+15,iad=206+20/206+19,fra=260+26,gru=301+30
+[2021/12/17 上午 02:24:26] (Msg) Ping measurement completed
+[2021/12/17 上午 02:24:26] (Debug) Destroying relay 'lim#29 (190.217.33.34:27043)' because initial_ping_timeout
+[2021/12/17 上午 02:24:26] (Debug) Destroying relay 'par#129 (185.25.182.68:27035)' because initial_ping_timeout
+[2021/12/17 上午 02:24:26] (Debug) Destroying relay 'scl#18 (155.133.249.162:27032)' because initial_ping_timeout
+[2021/12/17 上午 02:24:23] (Debug) Destroying relay 'scl#129 (155.133.249.194:27067)' because initial_ping_timeout
+[2021/12/17 上午 02:24:23] (Debug) Destroying relay 'par#113 (185.25.182.68:27019)' because initial_ping_timeout
+[2021/12/17 上午 02:24:23] (Debug) Destroying relay 'lim#9 (190.217.33.34:27023)' because initial_ping_timeout
+[2021/12/17 上午 02:24:21] (Verbose) Communications with routing cluster 'jnb' established.
+[2021/12/17 上午 02:24:21] (Verbose) Communications with routing cluster 'vie' established.
+[2021/12/17 上午 02:24:21] (Verbose) Communications with routing cluster 'waw' established.
+[2021/12/17 上午 02:24:21] (Verbose) Communications with routing cluster 'sto' established.
+[2021/12/17 上午 02:24:21] (Verbose) Communications with routing cluster 'sto2' established.
+[2021/12/17 上午 02:24:21] (Verbose) Communications with routing cluster 'mad' established.
+[2021/12/17 上午 02:24:21] (Verbose) Communications with routing cluster 'lhr' established.
+[2021/12/17 上午 02:24:21] (Verbose) Communications with routing cluster 'syd' established.
+[2021/12/17 上午 02:24:21] (Verbose) Communications with routing cluster 'sgp' established.
+[2021/12/17 上午 02:24:21] (Verbose) Communications with routing cluster 'gru' established.
+[2021/12/17 上午 02:24:21] (Verbose) Communications with routing cluster 'seo' established.
+[2021/12/17 上午 02:24:21] (Verbose) Communications with routing cluster 'ord' established.
+[2021/12/17 上午 02:24:21] (Verbose) Communications with routing cluster 'eze' established.
+[2021/12/17 上午 02:24:21] (Verbose) Communications with routing cluster 'tyo' established.
+[2021/12/17 上午 02:24:21] (Verbose) Communications with routing cluster 'sea' established.
+[2021/12/17 上午 02:24:21] (Verbose) Communications with routing cluster 'fra' established.
+[2021/12/17 上午 02:24:21] (Verbose) Communications with routing cluster 'tyo1' established.
+[2021/12/17 上午 02:24:21] (Verbose) Communications with routing cluster 'ams' established.
+[2021/12/17 上午 02:24:21] (Verbose) Communications with routing cluster 'lax' established.
+[2021/12/17 上午 02:24:21] (Verbose) Communications with routing cluster 'maa' established.
+[2021/12/17 上午 02:24:21] (Verbose) Communications with routing cluster 'iad' established.
+[2021/12/17 上午 02:24:21] (Verbose) Communications with routing cluster 'atl' established.
+[2021/12/17 上午 02:24:21] (Verbose) Communications with routing cluster 'dxb' established.
+[2021/12/17 上午 02:24:21] (Verbose) Communications with routing cluster 'dfw' established.
+[2021/12/17 上午 02:24:21] (Verbose) Communications with routing cluster 'bom' established.
+[2021/12/17 上午 02:24:20] (Verbose) Communications with routing cluster 'hkg' established.
+[2021/12/17 上午 02:24:20] (Msg) SDR RelayNetworkStatus:  avail=Attempting  config=OK  anyrelay=Attempting   (Performing ping measurement)
+[2021/12/17 上午 02:24:20] (Msg) Performing ping measurement
+[2021/12/17 上午 02:24:20] (Msg) Got SDR network config.  Loaded revision 360 OK
+[2021/12/17 上午 02:24:20] (Warning) SDR network config fetch first attempt failed.  HTTP 504.  .  Trying again.
+[2021/12/17 上午 02:24:08] Attempting to open ALC device "OpenAL Soft on 喇叭 (Realtek(R) Audio)"
+[2021/12/17 上午 02:24:08] Loaded languages: English, German, French, Russian, Polish, Brazilian Portuguese, Castilian Spanish, Latinamerican Spanish, Simplified Chinese, Traditional Chinese, Japanese, Turkish, Korean
+[2021/12/17 上午 02:24:08] Loaded languages: English, German, French, Russian, Polish, Brazilian Portuguese, Castilian Spanish, Latinamerican Spanish, Simplified Chinese, Traditional Chinese, Japanese, Turkish, Korean
+[2021/12/17 上午 02:24:07] Logged in as Freedom (SteamID STEAM_1:0:207835436)
